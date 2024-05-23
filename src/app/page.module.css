@@ -213,11 +213,8 @@
   border-radius: 7px;
 }
 
-.container ul li {
-  list-style: none;
+#link {
   margin: 0 30px;
   font-weight: bold;
   padding: 10px;
-  background: none;
-
 }

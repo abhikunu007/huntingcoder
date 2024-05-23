@@ -1,23 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <nav className={styles.container}>
         <ul className={styles.uls}>
-          <li>
-            <a>Home </a>
-          </li>
-          <li>
-            <a> Blogs </a>
-          </li>
-          <li> 
-            <a> About </a>
-          </li>
-          <li>
-            <a> Contact Us </a>
-          </li>
+          <Link id={styles.link} href='/'>Home</Link>
+          <Link id={styles.link} href='/blogs'>Blogs</Link>
+          <Link id={styles.link} href='/about'>About</Link>
+          <Link id={styles.link} href='/contact'>Contact Us</Link>
         </ul>
       </nav>
 
@@ -65,7 +58,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>Learn NodeJs</h2>
+          <h3>Learn NodeJs</h3>
           <p>Explore all the concepts of Node Js</p>
         </a>
       </div>
