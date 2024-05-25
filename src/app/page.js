@@ -17,6 +17,9 @@ export default function Home() {
       <div className={styles.center}>
         <h1>HUNTING CODER</h1>
       </div>
+      <div className={styles.imgCont}>
+      <Image src="/homepageImage.webp"width={300} height={200} id={styles.img}></Image>
+      </div>
       <div className={styles.description}>
         <p>A blog for coders by hunting coders</p>
       </div>

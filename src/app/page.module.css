@@ -7,10 +7,6 @@
   min-height: 100vh;
 }
 
-.description {
-  margin-top: -15rem;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
@@ -49,8 +45,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
-  padding: 10rem 0;
 }
 
 .center::before {
@@ -72,6 +66,7 @@
 .center::after {
   content: "";
   left: 50%;
+  top: 25%;
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
@@ -207,7 +202,7 @@
  
 }
 
-.container ul :hover {
+.uls :hover {
   background: rgba(var(--card-rgb), 0.3);
   border: 1px solid rgba(var(--card-border-rgb), 0.20);
   border-radius: 7px;
@@ -217,4 +212,8 @@
   margin: 0 30px;
   font-weight: bold;
   padding: 10px;
+}
+
+#img {
+  border-radius: 11px;
 }
